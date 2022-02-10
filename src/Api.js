@@ -7,6 +7,7 @@ function Api() {
 
   const [infos, setInfos] = useState([])
   
+  
 
   const fetchInfos = async () => {
     const reponse = await fetch(url)
@@ -29,13 +30,13 @@ function Api() {
         <div className="btn-container">
           {infos.map((item, index) => {
             return (
-                <>
+                
                 <div key={index} className="container">
                <p> id: {item.id}</p>
                <p> Noms: {item.name}</p>
                <p> Email: {item.email}</p>
                </div>
-               </>  
+                 
              
             )
           })}
