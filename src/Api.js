@@ -20,7 +20,7 @@ function Api() {
  
 
   return (
-    <section className="section">
+    <section className="section" >
       <div className="title">
         <h2>Api</h2>
         <div className="title-underline"></div>
@@ -30,7 +30,7 @@ function Api() {
           {infos.map((item, index) => {
             return (
                 <>
-                <div key={item.id} className="container">
+                <div key={index} className="container">
                <p> id: {item.id}</p>
                <p> Noms: {item.name}</p>
                <p> Email: {item.email}</p>
