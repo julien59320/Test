@@ -1,7 +1,7 @@
 import  Counter from "./Counter";
 import Input from "./Input"
 import { React, useState } from 'react'
-// import Api from "./Api"
+import Api from "./Api"
 
 
 
@@ -12,6 +12,7 @@ function App() {
     <section className="container">
         <Counter />
         <Input />
+        <Api />
     </section>
   );
 }
